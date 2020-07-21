@@ -1,0 +1,207 @@
+*{
+    font-family: 'Roboto', sans-serif;
+    margin:0;
+ 
+
+ }
+ .main{
+    padding-top: 10rem; /*al dejar fijo se mantiene sin dar saltos*/
+      /* anets 14rem, modificado a 12rem header este unido a la imagen*/
+}
+
+
+ body{
+     background-color: #86bbd8;
+     /*antes #00A8E8*/
+ }
+
+ h2{ margin-bottom: 0.5em;
+ }
+
+.header{
+/* padding: 1rem; le da tamaño arriba y abajo*/
+    height: 10em;
+    display: flex;
+    position: fixed; /*con esto deja fijo los munus al deslizar pagina*/
+    left: 0;    /*les da al menu la posision son atributos de position*/
+    top: 0;
+    right:0; 
+    background-color: #2F4858;  /*antes #00171f*/
+    color: #FFFFFF;
+
+    /* https://coolors.co/ffffff-00171f-003459-007ea7-00a8e8 paleta de colores vieja*/
+    /* https://coolors.co/2f4858-33658a-86bbd8-f6ae2d-f26419 */
+}
+
+ .header a{   
+    text-decoration: none; /*le saca la linea de subrayado*/
+     color: #FFFFFF;
+     font-size: 20px;
+ }
+ .container {
+     width: 100%;
+     max-width: 85%;  
+     margin: 0 auto; 
+     /*aca cambiar toda la pagina el tamaño  estaba antes en 850px*/
+ }
+
+ div.container img{
+     width: 100%;
+
+ }      
+ .name-nav-list{ /* ordena el menu separando */
+    align-items: center;
+    justify-content: space-between;
+    display: flex; /*obliga que se pongan en linea*/
+ }
+
+
+ h1.main-text{margin: 0; /*elimino el margen del texto y se acomoda el menu*/
+}
+
+
+
+.main-text{ /* el texto de la pagina del logo*/
+    letter-spacing: 10px;
+    font-size: 2em;
+    font-style: italic;
+
+}
+
+ .navigation ul {
+    margin: 0;
+    padding: 0;
+    list-style: none; /* elimina el simbolo de lista */
+ 
+}
+ 
+
+.navigation ul li{
+    display: inline-block; /* alinia las lista de menu */
+}
+ 
+
+.navigation ul li a{
+    display: block;
+    padding: 0.5rem 1rem;
+    transition: all 0.3s linear; /* esto animia el meno de navegacion al pasar el mouse */
+}
+.navigation ul li a:hover{
+/* Comentario cambiar color de mouse selecion */
+background:#00A8E8;
+}
+
+
+/*tabla*/
+
+table {
+    border-collapse: collapse;
+    background-color:#86bbd8;   /* antes #007EA7  */
+    width: 100%;
+    margin-bottom: 20px;
+    }
+
+ table, th, td {
+    border: 1px solid black;
+    text-align: center;
+}
+
+th{
+    background-color: #33658a;   /* antes #003459*/
+        color: white;
+}
+  
+
+ /*aca ccs de productos  */
+ div.bici {
+   /* border: #007EA7 3px solid; */
+    float: right; 
+     margin: 20px auto;
+ }
+ 
+ 
+ div.bici img {
+    width: 35%;  /*soluciono el problema de formulario*/
+    height: auto;
+    float: left;
+}  
+
+.flexbox {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.flexbox-productos {
+    margin: 2rem;
+    flex: 1 1 320px;
+}
+
+/* css de contacto*/
+.contac {
+    width: 450px;
+    position: static; /*el fomulario no se suporpoe*/
+    margin: 0 auto;
+    padding: 1em;
+ }
+
+h1 {
+    text-align: left;
+    margin: 50px;
+}
+
+
+.input_name, .input_email, .input_topic ,.input_message {
+    
+    display: inline-flex; /*alinea el formulario*/
+    font-size: 20px;
+    margin: 45px auto;  /*separa arriba y abajo los imput del dormulario */
+    text-align: left; /*pone todo sobre la izquierda los box y nombres*/
+}
+
+
+.submit_form {   
+    text-align: right;  /*boton enviar */
+    padding-right: 115px;
+    font-size: 20px;
+}
+
+.name,.email ,.select, .message{
+    font-size: 20px;
+}
+
+
+label{
+    text-align: left;      /*pone los nombres a la izquierda    */
+    width: 80px;    
+}
+
+input[type="submit"] {   /*cambia tamaño de boton enviar*/
+    height: 30px;        
+    width:  100px;
+    font-size: 15px;
+    background-color:#2F4858;
+    color: white;
+}
+
+.street   {
+    text-align: center;
+    font-size: 20px;
+}
+
+.mapa {
+    display: flex;   /*es responsive el centrado  de mapa*/
+    justify-content: center;  /*es responsive el centrado  de mapa*/
+    padding: 2%;
+}
+
+
+.clear {
+    clear: both;
+}
+footer{
+    text-align: center;
+    color: white;
+    background-color: #2F4858;
+    height: 3em;
+}
+
